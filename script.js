@@ -274,4 +274,51 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', highlightNavOnScroll);
+
+  // 7. Slot Machine Number Animation
+  const animateValue = (element, start, end, duration, prefix = '', suffix = '') => {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      // easeOutExpo effect for a slot machine slow-down feel
+      const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      const currentVal = Math.floor(easeProgress * (end - start) + start);
+      
+      // format with commas if needed
+      element.textContent = prefix + currentVal.toLocaleString() + suffix;
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  };
+
+  const metricValues = document.querySelectorAll('.metric-value');
+  metricValues.forEach(metric => {
+    const text = metric.textContent.trim();
+    
+    // Parse the number and its suffix/prefix (e.g. "1,200+", "8+ Yrs")
+    const match = text.match(/^(\D*)(\d+(?:,\d+)*)(\D*)$/);
+    if (match) {
+      const prefix = match[1] || '';
+      const numStr = match[2].replace(/,/g, '');
+      const endValue = parseInt(numStr, 10);
+      const suffix = match[3] || '';
+      
+      if (!isNaN(endValue)) {
+        // Use IntersectionObserver to start animation when visible
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animateValue(metric, 0, endValue, 2000, prefix, suffix);
+              obs.unobserve(metric);
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        observer.observe(metric);
+      }
+    }
+  });
 });
