@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const caseStudies = {
     'b2b-marketplace': {
-      title: 'Technical Operations Engineer | B2B Marketplace & E-Commerce Platform',
-      tags: ['Python', 'Amazon EKS', 'AWS ECS', 'Infrastructure as Code (IaC)', 'Terraform', 'OpenTofu', 'AWS CodePipeline', 'Amazon MSK (Kafka)'],
+      title: 'B2B Marketplace & E-Commerce: Technical Ops Engineer',
+      tags: ['Spacelift', 'Amazon ECS', 'OpenTofu', 'Amazon MSK', 'AWS CodePipeline'],
       overview: 'Engineered scalable internal systems, cloud infrastructure, and operational automations to support cross-departmental workflows for a global B2B marketplace.',
       challenges: [
         'Legacy workflows and manual business processes impeding cross-departmental operations.',
@@ -89,9 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'gov-migration': {
-      title: 'Enterprise AWS Migration: 1,200+ Servers & 30+ Applications for Gov Financial Services',
-      tags: ['AWS Migration', 'Terraform IaC', 'CI/CD Automation', 'Compliance & Security', 'Static Code Analysis'],
-      overview: 'Led the cross-functional cloud migration team responsible for architecting, provisioning, and transitioning 30+ mission-critical applications and over 1,200 servers from legacy infrastructure to a secure, highly regulated AWS cloud environment.',
+      title: 'Gov Financial Services: Cloud Migration',
+      tags: ['AWS Migration', '1,200+ Servers', 'Terraform IaC', 'Gov Compliance', 'CI/CD'],
+      overview: 'Led the migration team responsible for designing, automating, and executing the transition of mission-critical applications and servers into AWS with Terraform IaC.',
       challenges: [
         'Strict regulatory compliance, data security, and auditability requirements governing government financial workloads.',
         'Zero-loss migration of legacy application dependencies across 1,200+ physical and virtual servers.',
@@ -109,9 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     'marine-logistics': {
-      title: 'VMware-to-AWS Modernization & 500+ User Cloud Workspace Architecture',
-      tags: ['AWS Migration', 'VMware to AWS', 'Amazon WorkSpaces', 'AWS Lambda', 'CloudWatch Events', 'MSP Escalation'],
-      overview: 'Spearheaded the enterprise migration from self-hosted on-premise VMware infrastructure to AWS for a major marine logistics and transportation company, co-architecting a secure 500+ user remote workspace platform and serverless automation engine.',
+      title: 'Marine Logistics: VMware-to-AWS Modernization',
+      tags: ['VMware to AWS', 'Amazon WorkSpaces', 'AWS Lambda', 'CloudWatch'],
+      overview: 'Spearheaded migration from self-hosted VMware to AWS, co-architecting a secure 500+ user remote workspace environment and implementing custom serverless Lambda automations to reduce manual IT workload.',
       challenges: [
         'Aging on-premise VMware clusters prone to hardware failures and high maintenance overhead.',
         'Urgent business need for a secure, high-performance remote work solution for 500+ geographically distributed staff.',
