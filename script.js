@@ -68,6 +68,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectTriggers = document.querySelectorAll('.preview-modal-trigger');
 
   const caseStudies = {
+    'b2b-marketplace': {
+      title: 'Technical Operations Engineer | B2B Marketplace & E-Commerce Platform',
+      tags: ['Python', 'Amazon EKS', 'AWS ECS', 'Infrastructure as Code (IaC)', 'Terraform', 'OpenTofu', 'AWS CodePipeline', 'Amazon MSK (Kafka)'],
+      overview: 'Engineered scalable internal systems, cloud infrastructure, and operational automations to support cross-departmental workflows for a global B2B marketplace.',
+      challenges: [
+        'Legacy workflows and manual business processes impeding cross-departmental operations.',
+        'Third-party vendor data streaming and integrations requiring secure, granular access controls.',
+        'Expensive legacy Kubernetes (EKS) clusters incurring extended support surcharges.'
+      ],
+      solutions: [
+        'Engineered end-to-end internal web applications using Python and modern web frameworks to automate manual business processes.',
+        'Deployed public-facing Amazon MSK (Managed Streaming for Apache Kafka) clusters with configured granular access controls.',
+        'Updated and modularized Infrastructure-as-Code (IaC) using Terraform and OpenTofu to automate containerized AWS workloads (ECS) and streamline continuous delivery via AWS CodePipeline.'
+      ],
+      impact: [
+        'Reduced monthly cloud infrastructure spend and eliminated extended support surcharges with zero service downtime during EKS upgrades.',
+        'Partnered cross-functionally with non-technical stakeholders to translate complex needs into actionable reporting and scalable tools.',
+        'Modernized legacy operations through comprehensive automation and secure third-party data streaming.'
+      ]
+    },
     'gov-migration': {
       title: 'Enterprise AWS Migration: 1,200+ Servers & 30+ Applications for Gov Financial Services',
       tags: ['AWS Migration', 'Terraform IaC', 'CI/CD Automation', 'Compliance & Security', 'Static Code Analysis'],
