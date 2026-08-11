@@ -1020,6 +1020,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
     gap: 12px;
   }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ==========================================================================
@@ -1084,6 +1088,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-input,
 .form-textarea {
+  width: 100%;
   background-color: var(--bg-surface-elevated);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
@@ -1434,6 +1439,15 @@ h1, h2, h3, h4, h5, h6 {
 
   .project-specs {
     grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card,
+  .contact-sidebar-card {
+    padding: 24px;
   }
 
   .footer-container {
