@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob Thompson | Lead Cloud Engineer | Resume & Portfolio</title>
+  <meta name="description" content="Resume and portfolio of Jacob Thompson, Lead Cloud Engineer at CloudHesive with 10+ years in tech, specializing in large-scale AWS migrations (1,200+ servers), Terraform IaC, serverless automation, and enterprise cloud infrastructure.">
+  <meta name="keywords" content="Jacob Thompson, Jake Thompson, Lead Cloud Engineer, CloudHesive, AWS Migration, Terraform, IaC, CloudWatch, Lambda, Amazon WorkSpaces, Fort Lauderdale Cloud Engineer, DevOps Resume">
+  <meta property="og:title" content="Jacob Thompson | Lead Cloud Engineer">
+  <meta property="og:description" content="Lead Cloud Engineer at CloudHesive. 1,200+ servers migrated, Terraform IaC, AWS cloud architectures.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Ambience Overlay -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="logo-link">
+        <span class="logo-name">JACOB THOMPSON</span>
+        <span class="logo-divider">/</span>
+        <span class="logo-tag">LEAD CLOUD ENGINEER</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+          <li><a href="#architecture" class="nav-link" id="nav-architecture">Key Projects</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-skills">Skills & Toolkit</a></li>
+          <li><a href="#personal" class="nav-link" id="nav-personal">Personal</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm" id="nav-cta-btn">Let's Connect</a>
+        <button class="hamburger-btn" id="mobile-menu-btn" aria-label="Open Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#architecture" class="mobile-link">Key Projects</a></li>
+        <li><a href="#skills" class="mobile-link">Skills & Toolkit</a></li>
+        <li><a href="#personal" class="mobile-link">Personal</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="#contact" class="btn btn-primary btn-full mobile-cta-link">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Lead Cloud Engineer</h1>
+          <p class="hero-description">
+            Partnering with enterprise and government clients to architect secure, scalable AWS environments, lead complex cloud migrations, and standardize infrastructure through modular Terraform and automated CI/CD pipelines.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#architecture" class="btn btn-primary" id="hero-cloud-cta">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+              Explore Key Projects
+            </a>
+            <a href="#skills" class="btn btn-secondary" id="hero-skills-cta">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Skills & Technical Arsenal
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="metrics-strip">
+            <div class="metric-item">
+              <div class="metric-value">1,200+</div>
+              <div class="metric-label">Servers Migrated to AWS</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-value">30+</div>
+              <div class="metric-label">Enterprise Apps Transitioned</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-value">8+ Yrs</div>
+              <div class="metric-label">CloudHesive AWS Leadership</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <div class="metric-value">Certified</div>
+              <div class="metric-label">HashiCorp Terraform Associate</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <div class="portrait-image-wrapper">
+              <img src="assets/images/profile.png" alt="Jacob Thompson - Lead Cloud Engineer" class="portrait-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Summary & Core Engineering Pillars Section -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">ENGINEERING PROFILE</div>
+          <h2 class="section-title">Enterprise Cloud Migration & Infrastructure Modernization</h2>
+        </div>
+
+        <div class="discipline-grid resume-pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="discipline-card cloud-discipline">
+            <div class="discipline-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>
+            </div>
+            <h3 class="discipline-title">Large-Scale Cloud Migrations</h3>
+            <p class="discipline-text">
+              Led migration teams transitioning 30+ applications and 1,200+ servers to AWS. Proven track record moving legacy VMware and Rackspace workloads into high-availability AWS Landing Zones adhering to strict government and HIPAA compliance.
+            </p>
+            <ul class="discipline-features">
+              <li>1,200+ Physical & Virtual Servers Transitioned to AWS</li>
+              <li>VMware vSphere to AWS Modernization</li>
+              <li>Government Financial Services & HIPAA Compliance</li>
+              <li>Zero-Loss Cutover Strategies & Technical Runbooks</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="discipline-card cloud-discipline">
+            <div class="discipline-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="discipline-title">Infrastructure as Code & CI/CD</h3>
+            <p class="discipline-text">
+              Expert in designing modular, immutable Terraform environments. Implemented CI/CD pipelines and automated static code analysis to eliminate human errors, enforce security policies, and accelerate deployment velocities.
+            </p>
+            <ul class="discipline-features">
+              <li>Modular Terraform (IaC) Architecture & Modules</li>
+              <li>Automated CI/CD Provisioning Pipelines</li>
+              <li>Static Code Analysis & Policy Enforcement</li>
+              <li>Repeatable Multi-Account AWS Landing Zones</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="discipline-card cloud-discipline">
+            <div class="discipline-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="discipline-title">Workspaces, Serverless & MSP Leadership</h3>
+            <p class="discipline-text">
+              Co-architected secure Amazon WorkSpaces platforms for 500+ remote users. Engineered custom AWS Lambda and CloudWatch event automations, serving as the primary technical escalation authority for critical MSP incidents.
+            </p>
+            <ul class="discipline-features">
+              <li>Amazon WorkSpaces Solution for 500+ Remote Staff</li>
+              <li>Event-Driven AWS Lambda & CloudWatch Automation</li>
+              <li>Primary Tier-3 Escalation Lead for MSP Operations</li>
+              <li>Comprehensive Runbooks & Operational Documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloud & DevOps Engineering Showcase / Architecture Case Studies -->
+    <section class="cloud-section section-padding" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">ENGINEERING HIGHLIGHTS</div>
+          <h2 class="section-title">Key Projects</h2>
+        </div>
+
+        <!-- Featured Case Study 1: Gov Financial Services Migration -->
+        <div class="cloud-project-card featured-cloud">
+          <div class="cloud-project-preview">
+            <img src="assets/images/cloud_architecture.jpg" alt="Gov Financial Services AWS Cloud Architecture" class="cloud-preview-img" loading="lazy">
+            <div class="cloud-preview-overlay">
+              <button class="btn btn-sm btn-white preview-modal-trigger" data-project="gov-migration">
+                View Migration Breakdown
+              </button>
+            </div>
+          </div>
+          <div class="cloud-project-info">
+            <div class="project-tags">
+              <span class="tag">AWS Migration</span>
+              <span class="tag">1,200+ Servers</span>
+              <span class="tag">Terraform IaC</span>
+              <span class="tag">Gov Compliance</span>
+              <span class="tag">CI/CD</span>
+            </div>
+            <h3 class="project-title">Gov Financial Services: Transition of 30+ Applications & 1,200+ Servers to AWS</h3>
+            <p class="project-summary">
+              Led the migration team responsible for designing, automating, and executing the transition of 30+ mission-critical applications and 1,200+ servers to AWS with 100% Terraform IaC and zero compliance violations.
+            </p>
+            <div class="project-specs">
+              <div class="spec-box">
+                <span class="spec-label">Workload</span>
+                <span class="spec-val">1,200+ Servers</span>
+              </div>
+              <div class="spec-box">
+                <span class="spec-label">Applications</span>
+                <span class="spec-val">30+ Apps</span>
+              </div>
+              <div class="spec-box">
+                <span class="spec-label">Architecture</span>
+                <span class="spec-val">Terraform IaC</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm preview-modal-trigger" data-project="gov-migration">
+                Read Case Study
+              </button>
+              <a href="#contact" class="btn btn-secondary btn-sm">Discuss Architecture</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Case Study 2: Marine Logistics VMware to AWS & WorkSpaces -->
+        <div class="cloud-project-card">
+          <div class="cloud-project-preview">
+            <img src="assets/images/devops_dashboard.jpg" alt="Marine Logistics Cloud Workspace & Serverless Automation" class="cloud-preview-img" loading="lazy">
+            <div class="cloud-preview-overlay">
+              <button class="btn btn-sm btn-white preview-modal-trigger" data-project="marine-logistics">
+                View Workspace Architecture
+              </button>
+            </div>
+          </div>
+          <div class="cloud-project-info">
+            <div class="project-tags">
+              <span class="tag">VMware to AWS</span>
+              <span class="tag">Amazon WorkSpaces</span>
+              <span class="tag">AWS Lambda</span>
+              <span class="tag">CloudWatch Events</span>
+            </div>
+            <h3 class="project-title">Marine Logistics: VMware-to-AWS Modernization & 500+ User Cloud Workspace</h3>
+            <p class="project-summary">
+              Spearheaded migration from self-hosted VMware to AWS, co-architecting a secure 500+ user remote workspace environment and implementing custom serverless Lambda automations to reduce manual IT workload.
+            </p>
+            <div class="project-specs">
+              <div class="spec-box">
+                <span class="spec-label">Users Supported</span>
+                <span class="spec-val">500+ Users</span>
+              </div>
+              <div class="spec-box">
+                <span class="spec-label">Migration Source</span>
+                <span class="spec-val">VMware</span>
+              </div>
+              <div class="spec-box">
+                <span class="spec-label">Automation</span>
+                <span class="spec-val">AWS Lambda</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm preview-modal-trigger" data-project="marine-logistics">
+                Read Case Study
+              </button>
+              <a href="#contact" class="btn btn-secondary btn-sm">Inquire Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Technical Arsenal Section -->
+    <section class="skills-section section-padding" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">TECHNICAL ARSENAL</div>
+          <h2 class="section-title">Technical Skills & Tooling</h2>
+          <p class="section-subtitle">
+            Core platforms, automation tooling, databases, and compliance frameworks honed through 10+ years of hands-on delivery.
+          </p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Certifications -->
+          <div class="skill-category-card certs-card">
+            <div class="skill-category-header">
+              <div class="skill-icon">🏆</div>
+              <h3 class="skill-group-title">Certifications</h3>
+            </div>
+            <div class="skill-pills">
+              <div class="cert-item-pill">
+                <span class="cert-name">Associate Cloud Engineer</span>
+                <span class="cert-issuer">Google &bull; Sep 2025 - Sep 2028</span>
+              </div>
+              <div class="cert-item-pill">
+                <span class="cert-name">AWS Certified AI Practitioner</span>
+                <span class="cert-issuer">Amazon Web Services &bull; Jul 2025 - Jul 2028</span>
+              </div>
+              <div class="cert-item-pill">
+                <span class="cert-name">HashiCorp Certified: Terraform Associate (003)</span>
+                <span class="cert-issuer">HashiCorp &bull; Nov 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cloud & Platforms -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon">☁️</div>
+              <h3 class="skill-group-title">Cloud & Platforms</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Amazon Web Services (AWS)</span>
+              <span class="skill-pill">AWS EC2, S3, IAM, VPC</span>
+              <span class="skill-pill">Amazon WorkSpaces (500+ users)</span>
+              <span class="skill-pill">VMware vSphere Migration</span>
+              <span class="skill-pill">AWS Route 53 (DNS / Routing)</span>
+              <span class="skill-pill">AWS Multi-Account Landing Zones</span>
+              <span class="skill-pill">Rackspace to Cloud Migration</span>
+            </div>
+          </div>
+
+          <!-- IaC & Automation -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon">⚙️</div>
+              <h3 class="skill-group-title">IaC & Automation</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Infrastructure as Code (IaC)</span>
+              <span class="skill-pill">Terraform (Modular Architecture)</span>
+              <span class="skill-pill">Static Code Analysis</span>
+              <span class="skill-pill">CI/CD Deployment Automation</span>
+              <span class="skill-pill">Bash / Shell Scripting</span>
+              <span class="skill-pill">Python Automation</span>
+              <span class="skill-pill">AWS CloudFormation</span>
+            </div>
+          </div>
+
+          <!-- Serverless & Operations -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon">🚀</div>
+              <h3 class="skill-group-title">Serverless & Operations</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">AWS Lambda (Serverless)</span>
+              <span class="skill-pill">Amazon CloudWatch Events</span>
+              <span class="skill-pill">AWS Systems Manager (SSM)</span>
+              <span class="skill-pill">MSP Tier-3 Escalation Lead</span>
+              <span class="skill-pill">Incident Management & MTTR</span>
+              <span class="skill-pill">Technical Documentation & SOPs</span>
+              <span class="skill-pill">24/7 Production Support</span>
+            </div>
+          </div>
+
+          <!-- Databases & Systems -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon">🗄️</div>
+              <h3 class="skill-group-title">Databases & Operating Systems</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Microsoft SQL Server</span>
+              <span class="skill-pill">Pervasive SQL</span>
+              <span class="skill-pill">AWS RDS (Relational Database Service)</span>
+              <span class="skill-pill">Windows Server Administration</span>
+              <span class="skill-pill">Linux (RHEL / Ubuntu / Amazon Linux)</span>
+              <span class="skill-pill">Database Migrations & Maintenance</span>
+            </div>
+          </div>
+
+          <!-- Compliance & Security -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon">🛡️</div>
+              <h3 class="skill-group-title">Compliance & Security</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Government Financial Regulations</span>
+              <span class="skill-pill">HIPAA Compliance & Healthcare Security</span>
+              <span class="skill-pill">AWS Well-Architected Framework</span>
+              <span class="skill-pill">IAM Least Privilege & Multi-Factor Auth</span>
+              <span class="skill-pill">Zero-Audit Defect Migrations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Personal / Beyond the Terminal Section -->
+    <section class="personal-section section-padding" id="personal">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">BEYOND THE TERMINAL</div>
+          <h2 class="section-title">Personal Interests</h2>
+        </div>
+
+        <!-- GitHub Showcase Card -->
+        <div class="github-showcase-card">
+          <div class="github-showcase-content">
+            <div class="github-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div>
+              <h3 class="github-showcase-title">Personal Code</h3>
+              <p class="github-showcase-desc">
+                Check out my repositories, automation scripts, home lab experiments, and personal code on GitHub.
+              </p>
+            </div>
+          </div>
+          <a href="https://github.com/JakeThompson91" target="_blank" rel="noopener noreferrer" class="btn btn-github" id="personal-github-cta" aria-label="GitHub Profile">
+            <svg class="btn-icon github-cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
+
+        <!-- Hobbies Grid -->
+        <div class="hobbies-grid">
+          <!-- Hobby 1: Photography -->
+          <div class="hobby-card">
+            <div class="hobby-icon">📷</div>
+            <h3 class="hobby-title">Photography</h3>
+            <p class="hobby-desc">
+              Passionate about landscape, urban architecture, and street photography through prime glass. Capturing natural light, structural geometry, and fleeting moments.
+            </p>
+          </div>
+
+          <!-- Hobby 2: 3D Printing -->
+          <div class="hobby-card">
+            <div class="hobby-icon">🖨️</div>
+            <h3 class="hobby-title">3D Printing & Prototyping</h3>
+            <p class="hobby-desc">
+              Designing functional 3D models in CAD, fabricating custom electronics enclosures, rapid prototyping, and optimizing slicer profiles for precision prints.
+            </p>
+            <a href="https://www.printables.com/@jat09g_1116613" target="_blank" rel="noopener noreferrer" class="hobby-link">
+              <span>View Printables Profile &rarr;</span>
+            </a>
+          </div>
+
+          <!-- Hobby 3: Home Lab & Tinkering -->
+          <div class="hobby-card">
+            <div class="hobby-icon">🛠️</div>
+            <h3 class="hobby-title">Home Lab & Tinkering</h3>
+            <p class="hobby-desc">
+              Running a self-hosted home lab with containerized services, smart-home IoT automations, tinkering with my Flipper Zero, hardware modding, and experimenting with emerging open-source technologies.
+            </p>
+          </div>
+
+          <!-- Hobby 4: Fishing -->
+          <div class="hobby-card">
+            <div class="hobby-icon">🎣</div>
+            <h3 class="hobby-title">Fishing & Outdoors</h3>
+            <p class="hobby-desc">
+              Saltwater and freshwater angling across South Florida's coastal waters and Everglades canals. Recharging outdoors, boat navigating, and coastal exploring.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Direct Channels Section -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">GET IN TOUCH</div>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <h3 class="contact-card-title">Send a Message</h3>
+            <p class="contact-card-desc">
+              Whether you just want to say hi, request my resume, or chat about a project you're currently working on, drop me a line below!
+            </p>
+
+            <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms Access Key (Placeholder for user key or configurable endpoint) -->
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+              <input type="hidden" name="subject" value="New Portfolio Contact Form Submission">
+              <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name</label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Smith" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject_custom" class="form-input" placeholder="e.g. Say hi! / Request a resume / Project chat" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Hi Jake, loved checking out your portfolio. Reaching out because..." required></textarea>
+              </div>
+
+              <div class="form-status" id="form-status" aria-live="polite"></div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Direct LinkedIn / Sidebar Card -->
+          <div class="contact-sidebar-card">
+            <div class="sidebar-block">
+              <h3 class="contact-card-title">Prefer LinkedIn?</h3>
+              <p class="contact-card-desc">
+                Send a connection request or direct message.
+              </p>
+              <a href="https://www.linkedin.com/in/jacob-thompson/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-full" id="contact-linkedin-cta">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>Connect on LinkedIn</span>
+              </a>
+            </div>
+
+            <div class="sidebar-block location-block">
+              <h4 class="location-title">Location</h4>
+              <div class="location-item">
+                <span class="location-icon">📍</span>
+                <span>Fort Lauderdale, FL (Open to Remote & Hybrid Roles)</span>
+              </div>
+              <div class="map-wrapper">
+                <img
+                  src="assets/images/map_fort_lauderdale.jpg"
+                  alt="Location map centered on Fort Lauderdale, FL"
+                  class="location-map-img"
+                  loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">JACOB THOMPSON</span>
+        <span class="footer-tagline">Engineered for resilience, high availability, and operational excellence.</span>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#architecture">Key Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#personal">Personal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-copy">&copy; <span id="current-year">2026</span> Jacob Thompson. Lead Cloud Engineer.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cloud Project Details Modal -->
+  <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="project-modal-backdrop" id="project-modal-backdrop"></div>
+    <div class="project-modal-container">
+      <button class="project-modal-close" id="project-modal-close" aria-label="Close Modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="project-modal-body" id="project-modal-body">
+        <!-- Dynamic content injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
