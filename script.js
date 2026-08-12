@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'marine-logistics': {
       title: 'Marine Logistics: VMware-to-AWS Modernization',
       tags: ['VMware to AWS', 'Amazon WorkSpaces', 'AWS Lambda', 'CloudWatch'],
-      overview: 'Spearheaded migration from self-hosted VMware to AWS, co-architecting a secure 500+ user remote workspace environment and implementing custom serverless Lambda automations to reduce manual IT workload.',
+      overview: 'Spearheaded migration from self-hosted VMware to AWS, co-architecting a secure workspace environment and implementing custom serverless Lambda automations to reduce manual IT workload.',
       challenges: [
         'Aging on-premise VMware clusters prone to hardware failures and high maintenance overhead.',
         'Urgent business need for a secure, high-performance remote work solution for 500+ geographically distributed staff.',
